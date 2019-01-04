@@ -60,10 +60,21 @@ crypto.policy=limited 指定：
 java -Djava.security.properties=java.security.crypto.policy-limited -jar target/java-jsse-cipher-suites-dump-demo-v201901.1.jar
 ```
 
+`java.security.properties` プロパティによる `crypto.policy` のカスタマイズについては、 `(jdk_home)/jre/lib/security/java.security` 設定ファイル中に解説があるのでそちらを参照のこと。
+
 ## Eclipseプロジェクト用の設定
 
 https://github.com/SecureSkyTechnology/howto-eclipse-setup の `setup-type2` を使用。README.mdで以下を参照のこと:
 
 * Clean Up/Formatter 設定
 * GitでcloneしたMavenプロジェクトのインポート
+
+## 参考資料
+
+- https://docs.oracle.com/javase/jp/8/docs/technotes/guides/security/index.html
+- Java Secure Socket Extension (JSSE)リファレンス・ガイド
+  - https://docs.oracle.com/javase/jp/8/docs/technotes/guides/security/jsse/JSSERefGuide.html
+- Java暗号化アーキテクチャ 標準アルゴリズム名のドキュメント(JDK 8用)
+  - https://docs.oracle.com/javase/jp/8/docs/technotes/guides/security/StandardNames.html
+  - → 「JSSE暗号化方式群名」参照
 
