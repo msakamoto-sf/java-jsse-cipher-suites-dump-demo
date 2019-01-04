@@ -52,6 +52,12 @@ cd java-jsse-cipher-suites-dump-demo/
 
 jarファイルから実行:
 java -jar target/java-jsse-cipher-suites-dump-demo-v201901.1.jar
+
+crypto.policy=unlimited 指定(=JDK8最新のデフォルト)：
+java -Djava.security.properties=java.security.crypto.policy-unlimited -jar target/java-jsse-cipher-suites-dump-demo-v201901.1.jar
+
+crypto.policy=limited 指定：
+java -Djava.security.properties=java.security.crypto.policy-limited -jar target/java-jsse-cipher-suites-dump-demo-v201901.1.jar
 ```
 
 ## Eclipseプロジェクト用の設定
