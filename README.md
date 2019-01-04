@@ -26,6 +26,10 @@ TLSv1, TLSv1.1, TLSv1.2 それぞれで SSLConetxt を初期化し、getDefaultSSLParameter
     }
 ```
 
+関連記事 : 
+
+* Java8でサポートしているTLS Cipher Suiteの比較調査 - Qiita
+  * https://qiita.com/msakamoto_sf/items/877120a7dfa9e4a0e1e3
 
 ## 実行環境
 
